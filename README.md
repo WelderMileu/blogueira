@@ -2,6 +2,8 @@
 
 **Tarefas da aplicaçõa**
 
+- [ ] Resolver problema ao gerar a build do projeto
+- [ ] Subir a aplicação no netlify
 - [ ] Construir o menu
 - [ ] Construir o banner
 - [ ] Construir o corpo da aplicação
