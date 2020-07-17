@@ -1,6 +1,13 @@
 import { createGlobalStyle } from 'styled-components'
 
 const Global = createGlobalStyle`
+	:root {
+		--primary: #C4C4C4;
+		--gray: gray;
+		--red: red;
+		--orange: orange;
+	}
+
 	*, html, #root {
 		padding:0;
 		margin: 0;
@@ -15,3 +22,4 @@ const Global = createGlobalStyle`
 `
 
 export default Global;
+

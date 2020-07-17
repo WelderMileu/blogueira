@@ -5,15 +5,8 @@ import Img from 'gatsby-image'
 import group1 from '../../assets/images/group1.svg'
 import group2 from '../../assets/images/group2.svg'
 
-import { 
-	Text, 
-	TextSmall, 
-	Flex,
-	BannerText, 
-	BannerImage,
-	BannerIconPrimary,
-	BannerIconSecondary
-} from '../../style'
+import { Text, TextSmall, Grid } from '../../style'
+import { BannerText, BannerImage, BannerIconPrimary, BannerIconSecondary } from './style'
 
 const Banner = () => {
 	const { moca } = useStaticQuery(graphql`
@@ -29,10 +22,12 @@ const Banner = () => {
 		`);
 
 	return (
-		<Flex>
+		<Grid height="700px">
 			<BannerText>
-				<TextSmall mt="20px" color="gray"> Media Kit Profissional </TextSmall>
-				<Text color='#C4C4C4' mt="10px">
+				<TextSmall mt="20px" color="var(--gray)"> 
+					Media Kit Profissional 
+				</TextSmall>
+				<Text color="var(--primary)" mt="10px">
 					Sou uma blogueira tenho canal no youtube,
 					uma conta no instagram meu sonho e se tornar
 					uma jornalista.
@@ -41,7 +36,7 @@ const Banner = () => {
 			<BannerImage>
 				<Img 
 					fixed={moca.childImageSharp.fixed} 
-					alt="Moca"
+					alt="foto da moça"
 				/>
 			</BannerImage>
 			<BannerIconPrimary>
@@ -56,7 +51,7 @@ const Banner = () => {
 					alt="Icon2" 
 				/>
 			</BannerIconSecondary>
-		</Flex>
+		</Grid>
 	)
 }
 
