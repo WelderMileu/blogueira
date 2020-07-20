@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { View, Text } from '../../style'
+import { Text } from '../../style'
 import { 
 	Instagram, 
 	Youtube, 

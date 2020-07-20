@@ -18,6 +18,7 @@ export const Text = styled.p`
 `;
 
 export const TextSmall = styled.h1`
+	font-size: 2rem;
 	color: ${ props => props.color };
 	margin-top: ${ props => props.mt };
 `

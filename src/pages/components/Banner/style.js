@@ -37,7 +37,7 @@ export const BannerText = styled.div`
 export const BannerImage = styled.div`
 	position: absolute;
 	grid-column: 9;
-	margin-top: 150px;
+	bottom: 0;
 
 	@media(max-width: 1050px) {
 		grid-column: 8;
@@ -55,25 +55,12 @@ export const BannerImage = styled.div`
 export const BannerIconPrimary = styled.div`
 	position:absolute;
 	grid-column: 1;
-	top: 120px;
+	bottom: 0;
 	width: 50%;
 
 	@media(max-width: 1050px) {
 		img {
-			position: absolute;
 			width: 100%;
-		}
-	}
-
-	@media(max-width: 800px) {
-		img {
-			top: 100px;
-		}
-	}
-
-	@media(max-width: 500px) {
-		img {
-			top: 300px;
 		}
 	}
 `
